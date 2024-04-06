@@ -1,6 +1,6 @@
-[submodule "my-site-2.0"]
-	path = my-site-2.0
-	url = https://github.com/jmclain-origin/my-site-2.0
-[submodule "submodules-packages"]
-	path = submodules-packages
+[submodule "apps/child-module1"]
+	path = apps/child-module1
 	url = https://github.com/jmclain-origin/mvp-demo
+[submodule "apps/child-module2"]
+	path = apps/child-module2
+	url = https://github.com/jmclain-origin/tarot2.0

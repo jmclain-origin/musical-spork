@@ -16,11 +16,32 @@ Note: This repository URL is the root parent. The submodules are hosted in their
 
 ## Development Workflow
 
+[Git Submodules Docs](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
+
 ### Initial Setup
+
+#### Steps
 
 1. clone the parent repository
 2. clone the child repositories
 
+Cloning a repo with submodules will require additional steps. 
+
+```bash
+# 1st clone the parent repository
+git clone https://domain.host/owenr/parent-repo.git
+# submodules will be there but empty directories
+# next initialize your local configuration
+git submodule init
+# next update the submodule with latest commit history
+git submodule update
+```
+
+Alternatively this can be done by simply passing the `--recurse-submodules` flag to the `git clone` command.
+
+ ```bash
+ git clone --recurse-submodules https://domain.host/owenr/parent-repo.git
+ ```
 
 ### file structure
 
